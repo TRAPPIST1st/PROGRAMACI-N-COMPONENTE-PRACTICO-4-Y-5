@@ -1,0 +1,49 @@
+2026-11-23 03:35:20,599 | INFO     | ===== INICIO DE SIMULACIÓN SOFTWARE FJ =====
+2026-11-23 03:35:20,600 | INFO     | Cliente registrado: Ana Torres
+2026-11-23 03:35:20,600 | INFO     | Op 1 exitosa
+2026-11-23 03:35:20,600 | DEBUG    | Op 1 finalizada
+2026-11-23 03:35:20,600 | ERROR    | Op 2 falló [ClienteInvalidoError]: Valor inválido para 'email': 'luis-sin-arroba'
+2026-11-23 03:35:20,600 | DEBUG    | Op 2 finalizada
+2026-11-23 03:35:20,600 | ERROR    | Op 3 falló [ParametroFaltanteError]: Falta el parámetro obligatorio: telefono
+2026-11-23 03:35:20,600 | DEBUG    | Op 3 finalizada
+2026-11-23 03:35:20,600 | INFO     | Cliente registrado: Carlos Gómez
+2026-11-23 03:35:20,600 | INFO     | Op 4 exitosa
+2026-11-23 03:35:20,600 | DEBUG    | Op 4 finalizada
+2026-11-23 03:35:20,600 | INFO     | Servicio creado: Sala 'Sala Andes' (capacidad 10) - $50,000/hora
+2026-11-23 03:35:20,600 | INFO     | Op 5 exitosa
+2026-11-23 03:35:20,600 | DEBUG    | Op 5 finalizada
+2026-11-23 03:35:20,600 | ERROR    | Op 6 falló [ServicioInvalidoError]: Tarifa base inválida: -5000
+2026-11-23 03:35:20,600 | DEBUG    | Op 6 finalizada
+2026-11-23 03:35:20,600 | INFO     | Servicio creado: Equipo 'Video Beam' (Proyector) - $40,000/día + seguro
+2026-11-23 03:35:20,600 | INFO     | Op 7 exitosa
+2026-11-23 03:35:20,600 | DEBUG    | Op 7 finalizada
+2026-11-23 03:35:20,600 | INFO     | Servicio creado: Asesoría 'Asesoría Python' de Programación (nivel senior) - $80,000/hora
+2026-11-23 03:35:20,600 | INFO     | Op 8 exitosa
+2026-11-23 03:35:20,600 | DEBUG    | Op 8 finalizada
+2026-11-23 03:35:20,600 | INFO     | Reserva creada: Reserva #9 [PENDIENTE] Ana Torres -> Sala Andes (3 hora(s))
+2026-11-23 03:35:20,600 | INFO     | Reserva #9 CONFIRMADA
+2026-11-23 03:35:20,600 | DEBUG    | Intento de confirmación finalizado para reserva #9
+2026-11-23 03:35:20,600 | INFO     | Reserva #9 PROCESADA - total $160,650.00
+2026-11-23 03:35:20,600 | DEBUG    | Procesamiento finalizado para reserva #9
+2026-11-23 03:35:20,600 | INFO     | Op 9 exitosa
+2026-11-23 03:35:20,600 | DEBUG    | Op 9 finalizada
+2026-11-23 03:35:20,600 | ERROR    | Op 10 falló [ReservaInvalidaError]: No se pudo crear la reserva: duración inválida (causa: Una sala se reserva entre 1 y 12 horas (recibido: 20))
+2026-11-23 03:35:20,600 | DEBUG    | Op 10 finalizada
+2026-11-23 03:35:20,600 | INFO     | Reserva creada: Reserva #11 [PENDIENTE] Carlos Gómez -> Video Beam (2 día(s))
+2026-11-23 03:35:20,600 | ERROR    | Reserva #11 no confirmada: El servicio 'Video Beam' no está disponible
+2026-11-23 03:35:20,601 | DEBUG    | Intento de confirmación finalizado para reserva #11
+2026-11-23 03:35:20,601 | ERROR    | Op 11 falló [ServicioNoDisponibleError]: El servicio 'Video Beam' no está disponible
+2026-11-23 03:35:20,601 | DEBUG    | Op 11 finalizada
+2026-11-23 03:35:20,601 | INFO     | Reserva creada: Reserva #12 [PENDIENTE] Carlos Gómez -> Asesoría Python (2 hora(s))
+2026-11-23 03:35:20,601 | INFO     | Reserva #12 CONFIRMADA
+2026-11-23 03:35:20,601 | DEBUG    | Intento de confirmación finalizado para reserva #12
+2026-11-23 03:35:20,601 | INFO     | Reserva #12 CANCELADA
+2026-11-23 03:35:20,601 | DEBUG    | Intento de cancelación finalizado para reserva #12
+2026-11-23 03:35:20,601 | DEBUG    | Procesamiento finalizado para reserva #12
+2026-11-23 03:35:20,601 | ERROR    | Op 12 falló [OperacionNoPermitidaError]: Solo se procesan reservas CONFIRMADAS (estado actual: CANCELADA)
+2026-11-23 03:35:20,601 | DEBUG    | Op 12 finalizada
+2026-11-23 03:35:20,601 | ERROR    | Op 13 falló [CalculoInconsistenteError]: Descuento fuera de rango [0,1): 1.5
+2026-11-23 03:35:20,601 | DEBUG    | Op 13 finalizada
+2026-11-23 03:35:20,601 | ERROR    | Op 14 falló [ParametroFaltanteError]: Una reserva requiere cliente, servicio y duración
+2026-11-23 03:35:20,601 | DEBUG    | Op 14 finalizada
+2026-11-23 03:35:20,601 | INFO     | ===== FIN DE SIMULACIÓN =====
